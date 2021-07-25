@@ -1,4 +1,4 @@
-//adds /api to endpoints
+// index dependencies
 const router = require('express').Router();
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes.js')

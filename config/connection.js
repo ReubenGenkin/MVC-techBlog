@@ -10,12 +10,12 @@ if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
     sequelize = new Sequelize(
-        process.env['sqlUser'],
-        process.env['sqlPass'],
-        process.env['dbName'], {
+        process.env.dbName,
+        process.env.dbUser,
+        process.env.dbPass, {
         host: 'localhost',
         dialect: 'mysql',
-        port: 3001
+        port: 3306
     });
 }
 
